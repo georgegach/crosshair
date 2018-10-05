@@ -6,7 +6,7 @@ class Crosshair(QtWidgets.QWidget):
         QtWidgets.QWidget.__init__(self, parent)
         self.ws = windowSize
         self.resize(windowSize+1, windowSize+1)
-        self.pen = QtGui.QPen(QtGui.QColor(100,255,100,150))                
+        self.pen = QtGui.QPen(QtGui.QColor(0,255,0,255))                
         self.pen.setWidth(penWidth)                                            
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint | QtCore.Qt.WindowStaysOnTopHint | QtCore.Qt.WindowTransparentForInput)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
